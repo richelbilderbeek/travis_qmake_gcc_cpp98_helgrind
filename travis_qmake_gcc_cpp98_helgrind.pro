@@ -1,6 +1,6 @@
-QMAKE_CXXFLAGS += -pthread -std=c++11 -Wl,--no-as-needed
+QMAKE_CXXFLAGS += -pthread  -Wl,--no-as-needed
 QMAKE_LFLAGS += -pthread -Wl,--no-as-needed
-CONFIG += c++11 consol
+CONFIG += console
 CONFIG   -= app_bundle
 TEMPLATE = app
 SOURCES += main.cpp
