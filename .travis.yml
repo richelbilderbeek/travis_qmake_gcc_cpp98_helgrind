@@ -3,7 +3,7 @@ compiler: gcc
 
 script: 
   - echo "Cannot run std::thread without C++11"
-  #- qmake
-  #- make
-  #- valgrind --tool=helgrind --log-file=helgrind.log travis_qmake_gcc_cpp98_helgrind
-  #- cat helgrind.log
+  - qmake
+  - make
+  - valgrind --tool=helgrind --log-file=helgrind.log travis_qmake_gcc_cpp98_helgrind
+  - cat helgrind.log
